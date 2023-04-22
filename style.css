@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+#calculadora h1 {
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em wheat;
+    
+}
+
+#detalle h1 {
+    color: white;
+}
+
+
+body{
+    background-image: linear-gradient(100deg, #ffbbfd 0, #ffa9f6 25%, #ef91ea 50%, #d07bdf 75%, #b26cd9 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: #3E363F;
+}
+
+
+#contenedor{
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+#calculadora{
+    background: white;
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#detalle{
+    background:orchid;
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #f6f5f7;
+    
+}
+
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+
+.contenido2{
+    position: relative;
+    top: 50%;
+    overflow: hidden;
+    transform: translateY(30%);
+    padding: 40px;
+    padding-bottom: 100px;
+    border-color: #0A81D1;
+    border: 1px solid palevioletred;
+    background-color: #863BAB;
+    width: 73%;
+    height: 160px;
+    left: 4%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+    text-align: justify;
+    transition: width 1s,height 1s;
+}
+
+.contenido3{
+    position:relative;
+    transform: translateY(7%);;
+    border-color: #0A81D1;
+    border: 1px solid palevioletred;
+    background-color: #863BAB;
+    width: 90%;
+    height: 430px;
+    right: 7px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+    margin-left: 6%;
+    transition: width 1s,height 1s;
+}
+
+.contenido {
+    color: beige;
+}
+
+.contenido2:hover, .contenido3:hover {
+    background-color:indianred;
+}
+
+.contenido2:hover{
+    width: 75%;
+    height: 92%;
+}
+
+.contenido3:hover{
+    width: 92%;
+    height: 92%;
+}
+
+input {
+	width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: #eee;
+}
+
+button {
+    font-size: 15px;
+	font-weight: bold;
+	padding: 12px 30px;
+	background-image: radial-gradient(circle at 48.14% 43.05%, #ba60c1 0, #a24fb7 25%, #863bab 50%, #68289f 75%, #481b96 190%);
+	color: white;
+	text-transform: uppercase;
+    border: 1px solid #863BAB;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+button:hover{
+    background-image: radial-gradient(circle at 44.57% 57.76%, #cc7084 0, #c2637e 16.67%, #b35176 33.33%, #a13b6c 50%, #8e2463 66.67%, #7d0c5d 83.33%, #6f005b 100%);
+}
+
+#contenedor{
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+  }
+
+#error{
+    color:gold;
+    display: none;
+    font-style:italic;
+    font-family: cursive;
+    font-size: x-small;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#flu, #man, #volumen{
+    display: none;
+}
+
+.resultado{
+    color: #f1dec3;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-shadow: 0.1em 0.1em 0.2em purple;
+    display: none;
+}
